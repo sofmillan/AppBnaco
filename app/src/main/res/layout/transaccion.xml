@@ -1,6 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transacciones"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/darkPink"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número de cuenta"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/idaccount"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:id="@+id/accountdate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:inputType="date"
+        android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/tvfullname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="textPersonName"
+        android:gravity="center"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+
+        />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Tipo de transacción"
+    android:textStyle="bold"
+    android:layout_marginTop="30dp"
+    android:textSize="20dp"
+    android:textColor="@color/darkPink"
+    android:layout_marginLeft="30dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp">
+        <RadioButton
+            android:id="@+id/consignacion"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:text="Consignacion"
+            android:textSize="18dp"
+            />
+        <RadioButton
+            android:id="@+id/retiro"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:text="Retiro"
+            android:textSize="18dp"
+            />
+       </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:id="@+id/transvalue"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:inputType="number"
+        android:drawableStart="@drawable/ic_baseline_attach_money_24"
+        />
+
+
+    <Button
+        android:id="@+id/saveaccount"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Guardar"
+        android:backgroundTint="@color/darkPink"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Regresar"
+        android:backgroundTint="@color/darkPink"/>
+
+
+
+</LinearLayout>

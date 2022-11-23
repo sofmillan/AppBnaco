@@ -35,25 +35,7 @@
         android:drawableStart="@drawable/ic_baseline_credit_card_24"
 
         />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nombre Completo"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        android:textSize="15dp"
-        android:textColor="@color/black"
-        />
-    <TextView
-        android:id="@+id/tvfullname"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:inputType="textPersonName"
-        android:gravity="center"
-        android:drawableStart="@drawable/ic_baseline_person_24"
 
-        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -117,16 +99,13 @@
         android:text="Guardar"
         android:backgroundTint="@color/darkPink"/>
     <Button
-        android:id="@+id/trans"
+        android:id="@+id/btntrans"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:text="Transacciones"
         android:backgroundTint="@color/darkPink"/>
-
-
-
 
 
 </LinearLayout>

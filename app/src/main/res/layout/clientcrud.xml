@@ -136,6 +136,7 @@
         android:backgroundTint="@color/darkPink"
         />
     <Button
+        android:id="@+id/btntrans"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Transacción"
